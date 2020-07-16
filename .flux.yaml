@@ -2,3 +2,4 @@ version: 1
 patchUpdated:
   generators:
     - command: tk show .
+  patchFile: flux-patch.yaml
