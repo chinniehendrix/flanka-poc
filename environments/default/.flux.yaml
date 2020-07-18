@@ -1,5 +1,4 @@
 version: 1
 commandUpdated:
   generators:
-  - command: |
-      echo "apiVersion: v1\nkind: Namespace\nmetadata:\n  name: hello"
+  - command: echo "apiVersion: v1\nkind: Namespace\nmetadata:\n  name: hello"
