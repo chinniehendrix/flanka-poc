@@ -1,5 +1,4 @@
 version: 1
-patchUpdated:
+commandUpdated:
   generators:
   - command: tk show .
-  patchFile: flux-patch.yaml
