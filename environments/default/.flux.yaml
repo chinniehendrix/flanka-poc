@@ -1,4 +1,4 @@
 version: 1
 commandUpdated:
   generators:
-  - command: tk show .
+  - command: tk show --dangerous-allow-redirect . | cat
