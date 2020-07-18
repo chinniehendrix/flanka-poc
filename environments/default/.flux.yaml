@@ -2,3 +2,4 @@ version: 1
 commandUpdated:
   generators:
   - command: "echo 'apiVersion: v1\nkind: Namespace\nmetadata:\n  name: hello'"
+  - command: "tk show --dangerous-allow-redirect . | cat"
