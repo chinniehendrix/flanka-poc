@@ -1,5 +1,5 @@
 version: 1
 patchUpdated:
   generators:
-  - command: tk show --dangerous-allow-redirect . | cat
+  - command: tk show --dangerous-allow-redirect . > test.yaml
   patchFile: flux-patch.yaml
