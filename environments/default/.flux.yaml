@@ -1,5 +1,5 @@
 version: 1
-patchUpdated:
+commandUpdated:
   generators:
-  - command: tk show --dangerous-allow-redirect . > test.yaml
-  patchFile: flux-patch.yaml
+  - command: |
+      echo "apiVersion: v1\nkind: Namespace\nmetadata:\n  name: hello"
