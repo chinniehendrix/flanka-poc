@@ -11,6 +11,10 @@
       prometheus: {
         port: 9090,
         name: "prometheus"
+      },
+      podinfo: {
+        port: 9898,
+        name: "podinfo"
       }
     }
   },

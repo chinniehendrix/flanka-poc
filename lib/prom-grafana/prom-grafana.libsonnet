@@ -31,5 +31,16 @@
       ),
       service: $.util.serviceFor(self.deployment) + service.mixin.spec.withType("NodePort"),
     },
+
+    podinfo: {
+      deployment: deployment.new(
+        name=c.podinfo.name, replicas=1,
+        containers=[
+          container.new(c.podinfo.name, $._images.promgrafana.podinfo)
+          + container.withPorts([port.new("ui", c.podinfo.port)]),
+        ],
+      ),
+      service: $.util.serviceFor(self.deployment) + service.mixin.spec.withType("NodePort"),
+    },
   }
 }
