@@ -1,6 +1,6 @@
 version: 1
 patchUpdated:
   generators:
-  - command: "PAGER='busybox less' tk show --dangerous-allow-redirect . | cat"
+  - command: "PAGER='busybox less' tk show --dangerous-allow-redirect . > manifest.yaml"
   patchFile: flux-patch.yaml
   
