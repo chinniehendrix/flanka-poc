@@ -20,6 +20,7 @@
     promgrafana: {
       grafana: "grafana/grafana",
       prometheus: "prom/prometheus",
+      podinfo: "chindou/podinfo",
     }
   }
 }

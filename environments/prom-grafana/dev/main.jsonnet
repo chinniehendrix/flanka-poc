@@ -11,4 +11,13 @@
       grafana: "grafana/grafana:6.5.2"
     }
   }
+
+  podinfo: {
+      deployment: deployment.new(
+        name="podinfo", replicas=1,
+        containers=[
+          container.new("podinfo", $._images.promgrafana.podinfo),
+        ],
+      ),
+    },
 }
