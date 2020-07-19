@@ -10,7 +10,7 @@
       prometheus: "prom/prometheus:v2.14",
       grafana: "grafana/grafana:6.5.2"
     }
-  }
+  },
 
   podinfo: {
       deployment: deployment.new(
