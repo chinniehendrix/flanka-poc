@@ -36,7 +36,7 @@
       deployment: deployment.new(
         name=c.podinfo.name, replicas=1,
         containers=[
-          container.new(c.podinfo.name, $._images.promgrafana.podinfo)
+          container.new(c.podinfo.name, "chindou/podinfo")
           + container.withPorts([port.new("ui", c.podinfo.port)]),
         ],
       ),
