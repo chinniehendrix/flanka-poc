@@ -2,6 +2,7 @@
 (import "ksonnet-util/kausal.libsonnet") +
 (import "prom-grafana/prom-grafana.libsonnet") +
 {
+   ns: $.core.v1.namespace.new('prom-grafana-dev'),
   // again, we only want to patch, not replace, thus +::
   _images+:: {
     // we update this one entirely, so we can replace this one (:)
